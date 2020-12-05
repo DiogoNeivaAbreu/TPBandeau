@@ -24,7 +24,7 @@ public class Demo {
         Effet r = new Tourner();
         Effet z = new Zoomer();
         Scenario s = new Scenario();
-        s.ajoutEffet(c, 10, mb);
+        s.ajoutEffet(c, 5, mb);
         s.ajoutEffet(r, 2, mb);
         s.ajoutEffet(z, 1, mb);
         s.afficheScenario(mb);

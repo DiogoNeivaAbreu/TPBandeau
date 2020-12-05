@@ -20,7 +20,7 @@ public class Scenario {
  
     public void afficheScenario(Bandeau b){
         b.setMessage("Hello");
-        b.sleep(100);
+        b.sleep(1000);
         for (Effet e : myeffets){
             e.effet(b);
         }
