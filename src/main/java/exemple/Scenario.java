@@ -9,9 +9,8 @@ import bandeau.Bandeau;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Scenario {
+public class Scenario extends Bandeaub{
     
-    public Bandeau b = new Bandeau();
     public final List<Effet> myeffets = new ArrayList<>();
     
     public void ajoutEffet(Effet e, int repetitions){

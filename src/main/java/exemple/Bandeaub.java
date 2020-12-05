@@ -5,10 +5,11 @@
  */
 package exemple;
 
-
-public class Effet extends Bandeaub{
-    
-    public void effet(){
-        
-    }
+import bandeau.Bandeau;
+/**
+ *
+ * @author Asus
+ */
+public class Bandeaub {
+    public Bandeau b = new Bandeau();
 }
