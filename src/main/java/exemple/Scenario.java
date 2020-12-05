@@ -14,8 +14,6 @@ public class Scenario {
     public final List<Effet> myeffets = new ArrayList<>();
     
     public void ajoutEffet(Effet e, int repetitions, Bandeau b){
-        b.setMessage("On va " + e.toString() + repetitions + "fois");
-        b.sleep(100);
         for (int i=0; i<repetitions; i++)
             myeffets.add(e);
     }
