@@ -6,10 +6,14 @@
 package exemple;
 
 import bandeau.Bandeau;
-/**
- *
- * @author Asus
- */
-public class Bandeaub {
-    public Bandeau b = new Bandeau();
+
+public class Clignoter extends Effet{
+    
+    
+    public void effet(Bandeau b){
+        b.setMessage("On clignote");
+        b.sleep(100);
+        b.setMessage(" ");
+        b.sleep(100);
+    }
 }

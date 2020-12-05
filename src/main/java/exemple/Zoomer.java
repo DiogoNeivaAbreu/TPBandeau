@@ -6,12 +6,11 @@
 package exemple;
 
 import java.awt.Font;
+import bandeau.Bandeau;
 
-public class Zoom extends Effet{
+public class Zoomer extends Effet{
     
-    public void effet(){
-        b.setMessage("On va zoomer");
-	b.sleep(1000);
+    public void effet(Bandeau b){
         b.setMessage("On zoom");
         for (int i = 5; i < 60 ; i+=5) {
 		b.setFont(new Font("Dialog", Font.BOLD, 5+i));

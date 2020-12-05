@@ -5,17 +5,15 @@
  */
 package exemple;
 
+import bandeau.Bandeau;
 
-
-public class Rotation extends Effet{
+public class Tourner extends Effet{
     
-    public void effet(){
-        b.setMessage("On va tourner");
-	b.sleep(1000);
+    public void effet(Bandeau b){
         b.setMessage("On tourne");
 	for (int i = 0; i <= 100; i++) {
 		b.setRotation(2*Math.PI*i / 100);
-		b.sleep(100);
+		b.sleep(50);
 	}
     }
     

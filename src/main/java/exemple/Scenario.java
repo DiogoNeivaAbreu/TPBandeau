@@ -9,21 +9,24 @@ import bandeau.Bandeau;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Scenario extends Bandeaub{
+public class Scenario {
     
     public final List<Effet> myeffets = new ArrayList<>();
     
-    public void ajoutEffet(Effet e, int repetitions){
+    public void ajoutEffet(Effet e, int repetitions, Bandeau b){
+        b.setMessage("On va " + e.toString() + repetitions + "fois");
+        b.sleep(100);
         for (int i=0; i<repetitions; i++)
             myeffets.add(e);
     }
-    
-    public void afficheScenario(){
+ 
+    public void afficheScenario(Bandeau b){
         b.setMessage("Hello");
         b.sleep(100);
         for (Effet e : myeffets){
-            e.effet();
+            e.effet(b);
         }
+        
         b.setMessage("Terminé");
 	b.sleep(3000);
 	b.close();

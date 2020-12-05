@@ -5,10 +5,11 @@
  */
 package exemple;
 
+import bandeau.Bandeau;
 
-public class Effet extends Bandeaub{
+public class Effet { 
     
-    public void effet(){
+    public void effet(Bandeau b){
         
     }
 }
