@@ -5,18 +5,17 @@
  */
 package exemple;
 
-import bandeau.Bandeau;
 
 
 public class Rotation extends Effet{
     
-    public void onTourne(){
-        monBandeau.setMessage("On va tourner");
-	monBandeau.sleep(1000);
-        monBandeau.setMessage("On tourne");
+    public void effet(){
+        b.setMessage("On va tourner");
+	b.sleep(1000);
+        b.setMessage("On tourne");
 	for (int i = 0; i <= 100; i++) {
-		monBandeau.setRotation(2*Math.PI*i / 100);
-		monBandeau.sleep(100);
+		b.setRotation(2*Math.PI*i / 100);
+		b.sleep(100);
 	}
     }
     

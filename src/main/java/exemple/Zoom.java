@@ -9,13 +9,13 @@ import java.awt.Font;
 
 public class Zoom extends Effet{
     
-    public void onZoom(){
-        monBandeau.setMessage("On va zoomer");
-	monBandeau.sleep(1000);
-        monBandeau.setMessage("On zoom");
+    public void effet(){
+        b.setMessage("On va zoomer");
+	b.sleep(1000);
+        b.setMessage("On zoom");
         for (int i = 5; i < 60 ; i+=5) {
-		monBandeau.setFont(new Font("Dialog", Font.BOLD, 5+i));
-		monBandeau.sleep(100);
+		b.setFont(new Font("Dialog", Font.BOLD, 5+i));
+		b.sleep(100);
         }
     }
 }

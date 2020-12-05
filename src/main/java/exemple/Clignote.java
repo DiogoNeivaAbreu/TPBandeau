@@ -9,15 +9,15 @@ package exemple;
 public class Clignote extends Effet{
     
     
-    public void onClignote(){
-        monBandeau.setMessage("On va clignoter");
-	monBandeau.sleep(1000);
-        monBandeau.setMessage("On clignote");
+    public void effet(){
+        b.setMessage("On va clignoter");
+	b.sleep(1000);
+        b.setMessage("On clignote");
         for (int i = 0; i < 10 ; i+=1) {
-		monBandeau.setMessage("On clignote");
-		monBandeau.sleep(100);
-                monBandeau.setMessage(" ");
-                monBandeau.sleep(100);
+		b.setMessage("On clignote");
+		b.sleep(100);
+                b.setMessage(" ");
+                b.sleep(100);
         }
     }
 }

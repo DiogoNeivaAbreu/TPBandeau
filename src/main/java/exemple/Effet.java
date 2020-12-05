@@ -7,12 +7,10 @@ package exemple;
 
 import bandeau.Bandeau;
 
-
 public class Effet {
-    Bandeau monBandeau = new Bandeau();
-    Effet c = new Clignote();
-    Effet r = new Rotation();
-    Effet z = new Zoom();
+    public Bandeau b = new Bandeau();
     
-    
+    public void effet(){
+        
+    }
 }

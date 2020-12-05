@@ -5,8 +5,6 @@
  */
 package exemple;
 
-import bandeau.Bandeau;
-
 /**
  *
  * @author Asus
@@ -19,8 +17,13 @@ public class Demo {
     
         
     public static void main(String[] args) {
+        Effet c = new Clignote();
+        Effet r = new Rotation();
+        Effet z = new Zoom();
         Scenario s = new Scenario();
-//        s.ajoutEffet(s.z, 1);
+        s.ajoutEffet(c, 1);
+        s.ajoutEffet(r, 2);
+        s.ajoutEffet(z, 1);
         s.afficheScenario();
         
     }
